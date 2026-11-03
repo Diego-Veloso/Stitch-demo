@@ -1,0 +1,132 @@
+<!-- PRISCILA VELOSO | MailerLite landing-page HTML block
+     Paste this fragment into ONE HTML Code block in a MailerLite landing page.
+     Replace the placeholder checkout URLs and update offer/delivery terms before publishing.
+     The styles are scoped to .pv-page to avoid affecting the rest of your MailerLite page.
+-->
+<style>
+.pv-page{--pv-green:#123d30;--pv-deep:#092a21;--pv-sage:#e1e7d8;--pv-cream:#faf5eb;--pv-paper:#fffdf8;--pv-gold:#d8b45e;--pv-ink:#1d2b24;--pv-muted:#647168;font-family:Arial,Helvetica,sans-serif;color:var(--pv-ink);background:var(--pv-cream);line-height:1.55}
+.pv-page *{box-sizing:border-box}.pv-wrap{width:min(1120px,100%);margin:0 auto;padding:0 22px}
+.pv-page h1,.pv-page h2,.pv-page h3{font-family:Georgia,'Times New Roman',serif;color:var(--pv-deep);line-height:1.08;margin:0}
+.pv-page h1{font-size:clamp(36px,5vw,62px);letter-spacing:-1.5px;margin:16px 0}
+.pv-page h2{font-size:clamp(28px,3.5vw,42px);letter-spacing:-.7px}
+.pv-page h3{font-size:21px}.pv-page p{margin:12px 0;color:#46544b}
+.pv-kicker{display:inline-block;background:#ead59b;color:#302915;border-radius:30px;padding:6px 13px;font-size:11px;font-weight:bold;letter-spacing:1px;text-transform:uppercase}
+.pv-btn{display:inline-block;background:var(--pv-green);color:#fff!important;text-decoration:none!important;font-weight:bold;font-size:14px;padding:14px 22px;border-radius:30px;margin-top:12px}
+.pv-btn:hover{background:var(--pv-deep)}.pv-btn-gold{background:var(--pv-gold);color:#17251e!important}
+.pv-hero{background:linear-gradient(115deg,#fffaf0,#f0e7d4);padding:65px 0 54px}
+.pv-hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:35px;align-items:center}
+.pv-lead{font-size:18px;max-width:570px}.pv-note{font-size:12px;color:var(--pv-muted);margin-top:10px}
+.pv-mockups{display:flex;align-items:center;justify-content:center;min-height:330px;padding:20px}
+.pv-book{width:210px;height:295px;background:linear-gradient(145deg,#1d5a43,#092a21);border:3px solid var(--pv-gold);box-shadow:15px 18px 25px #132c2440;color:#f7e6b8;padding:24px 16px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;transform:rotate(-4deg)}
+.pv-book small{font-size:10px;letter-spacing:2px}.pv-book strong{font: bold 29px/1.03 Georgia,serif;text-transform:uppercase}.pv-house{font-size:54px;line-height:1}
+.pv-mobile{width:145px;height:265px;border:7px solid #18211d;border-radius:24px;background:#fff;padding:16px 9px;margin:50px 0 0 -22px;box-shadow:0 15px 30px #152b2430}
+.pv-mobile b{font-size:12px;color:var(--pv-green)}.pv-balance{font-size:22px;font-weight:bold;margin-top:15px}.pv-up{font-size:10px;color:#25834c}
+.pv-bars{height:66px;display:flex;align-items:end;gap:5px;border-bottom:1px solid #ddd;margin:10px 0}.pv-bars i{display:block;width:17%;background:#579a73;border-radius:3px 3px 0 0}
+.pv-metric{font-size:9px;border-bottom:1px solid #eee;padding:5px 0;display:flex;justify-content:space-between}
+.pv-proof{background:var(--pv-green);color:#fff;padding:18px 0}.pv-proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center;font-weight:bold;font-size:14px}
+.pv-proof span{color:var(--pv-gold);font-size:20px;margin-right:8px}
+.pv-section{padding:65px 0}.pv-center{text-align:center}.pv-sub{max-width:680px;margin:12px auto 0!important;color:var(--pv-muted)!important}
+.pv-timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+.pv-milestone{text-align:center;padding:15px 8px}.pv-icon{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#f0e2bf;border:1px solid var(--pv-gold);font-size:25px;margin:0 auto 12px}
+.pv-year{font: bold 27px Georgia,serif;color:var(--pv-green)}.pv-milestone h3{font-size:18px;margin:6px 0}.pv-milestone p{font-size:13px;color:var(--pv-muted)}
+.pv-story{background:#fffdf8}.pv-story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:center}
+.pv-story-art{min-height:270px;border-radius:16px;background:linear-gradient(135deg,#d8c49a,#738b72);display:flex;align-items:end;padding:25px;color:#fff;font:italic 23px Georgia,serif}
+.pv-guide-grid{display:grid;grid-template-columns:190px 1fr;gap:30px;align-items:center}
+.pv-book-small{height:265px;background:linear-gradient(145deg,#1d5a43,#092a21);border:3px solid var(--pv-gold);color:#f7e6b8;box-shadow:10px 13px 22px #132c2430;padding:22px 14px;display:flex;flex-direction:column;justify-content:space-between;text-align:center;transform:rotate(-3deg)}
+.pv-book-small strong{font: bold 25px/1.05 Georgia,serif}.pv-price{font: bold 48px Georgia,serif;color:var(--pv-green);margin:5px 0}
+.pv-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.pv-benefit{background:#fffaf0;border:1px solid #e8ddc8;border-radius:13px;padding:20px 12px;text-align:center;font-weight:bold;font-size:14px}
+.pv-benefit span{display:block;font-size:27px;color:var(--pv-green);margin-bottom:8px}
+.pv-wealth{background:var(--pv-sage)}.pv-wealth-grid{display:grid;grid-template-columns:.9fr 1.1fr .7fr;gap:25px;align-items:center}
+.pv-checks{padding:0;list-style:none}.pv-checks li{margin:10px 0;font-size:14px}.pv-checks li:before{content:'✓';display:inline-block;background:var(--pv-green);color:white;border-radius:50%;width:19px;height:19px;text-align:center;line-height:19px;margin-right:9px}
+.pv-dashboard{background:#fff;border:7px solid #18211d;border-radius:14px;padding:13px;box-shadow:0 12px 25px #152b2420}
+.pv-dash-head{display:flex;justify-content:space-between;color:var(--pv-green);font-weight:bold;font-size:12px}.pv-dash-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
+.pv-dash-card{border:1px solid #e5e9e4;border-radius:8px;padding:10px}.pv-dash-card small{display:block;color:#78847b;font-size:10px}.pv-dash-card strong{font-size:19px}
+.pv-line{height:58px;border-bottom:1px solid #ddd;background:linear-gradient(160deg,transparent 48%,#62a17c 49%,#62a17c 51%,transparent 52%)}
+.pv-donut{width:66px;height:66px;border-radius:50%;margin:10px auto;background:conic-gradient(#397d5a 0 35%,#d8ad54 35% 62%,#8ba4a0 62% 80%,#e8e3d8 80%)}
+.pv-bundle{border-left:1px solid #a6b2a2;padding-left:22px}.pv-bundle .pv-price{font-size:58px}
+.pv-pricing{background:#fffdf8}.pv-plans{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;max-width:900px;margin:35px auto 0}
+.pv-plan{position:relative;border:1px solid #ddcfb3;border-radius:16px;padding:25px;background:#fffaf1}
+.pv-plan-featured{border:2px solid var(--pv-green);background:#eff1e7}.pv-plan h3{text-align:center;font: bold 13px Arial,sans-serif;letter-spacing:1px}
+.pv-plan .pv-price{text-align:center}.pv-plan ul{padding-left:18px;color:#46544b;font-size:14px}.pv-plan li{margin:9px 0}
+.pv-ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--pv-gold);border-radius:20px;padding:6px 16px;font-size:11px;font-weight:bold;white-space:nowrap}
+.pv-plan .pv-btn{display:block;text-align:center}
+.pv-about-faq{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:start}
+.pv-about{display:flex;gap:16px;align-items:center}.pv-avatar{width:105px;height:120px;flex:0 0 105px;border-radius:13px;background:linear-gradient(135deg,#d6c49d,#6e896f);display:grid;place-items:center;color:white;font:30px Georgia,serif}
+.pv-about h3{margin-bottom:8px}.pv-about p,.pv-faq p{font-size:13px;color:var(--pv-muted)}
+.pv-faq h2{font-size:30px;margin-bottom:15px}.pv-faq details{border-bottom:1px solid #e6ddcd;padding:13px 0}
+.pv-faq summary{font-weight:bold;cursor:pointer;font-size:14px}.pv-faq details p{margin:9px 0 0}
+.pv-final{background:linear-gradient(120deg,#092a21,#174b39);text-align:center;padding:55px 18px;color:white}
+.pv-final h2{color:#f6e5b9;margin-bottom:20px}.pv-footer{background:#08251e;color:#e8e9df;padding:22px 0;font-size:12px}
+.pv-footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.pv-footer a{color:#e8e9df;margin-right:14px}
+.pv-disclaimer{font-size:11px;color:#b8c5bb;margin-top:15px}
+@media(max-width:720px){
+ .pv-wrap{padding:0 17px}.pv-hero{padding:42px 0 30px}.pv-hero-grid,.pv-story-grid,.pv-wealth-grid,.pv-about-faq{grid-template-columns:1fr}
+ .pv-mockups{min-height:280px;transform:scale(.9);margin:-10px 0}.pv-proof-grid{grid-template-columns:1fr;gap:10px}
+ .pv-timeline{grid-template-columns:1fr 1fr;gap:8px}.pv-guide-grid{grid-template-columns:1fr;text-align:center}.pv-book-small{width:175px;margin:0 auto}
+ .pv-benefits{grid-template-columns:1fr}.pv-dashboard{max-width:460px;width:100%;margin:auto}.pv-bundle{border-left:0;border-top:1px solid #a6b2a2;padding:20px 0 0;text-align:center}
+ .pv-plans{grid-template-columns:1fr}.pv-about{align-items:flex-start}.pv-footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+
+<div class="pv-page">
+  <section class="pv-hero"><div class="pv-wrap pv-hero-grid">
+    <div><span class="pv-kicker">A real-life financial system</span>
+      <h1>From Sleeping on the Floor to Buying Our First Home in Canada in 2 Years.</h1>
+      <p class="pv-lead">Discover the practical habits and financial strategies that helped our family turn things around — and how you can start building a clearer financial future, too.</p>
+      <a class="pv-btn" href="YOUR_GUIDE_CHECKOUT_URL">GET THE FINANCIAL SECURITY GUIDE — $27.99&nbsp; ›</a>
+      <div class="pv-note">Practical steps. Real numbers. No financial fluff.</div>
+    </div>
+    <div class="pv-mockups"><div class="pv-book"><small>THE</small><strong>Financial<br>Security<br>Guide</strong><div class="pv-house">⌂</div><small>PLAN · SAVE · INVEST</small></div>
+      <div class="pv-mobile"><b>◈ WealthMe</b><div class="pv-balance">$12,840</div><div class="pv-up">▲ 8.4% this month</div><div class="pv-bars"><i style="height:38%"></i><i style="height:60%"></i><i style="height:47%"></i><i style="height:78%"></i><i style="height:66%"></i><i style="height:95%"></i></div><div class="pv-metric">Housing <b>32%</b></div><div class="pv-metric">Food <b>22%</b></div><div class="pv-metric">Transport <b>18%</b></div><div class="pv-metric">Other <b>28%</b></div></div>
+    </div>
+  </div></section>
+
+  <section class="pv-proof"><div class="pv-wrap pv-proof-grid"><div><span>♟</span>A real family journey</div><div><span>✓</span>A practical system</div><div><span>↗</span>Built through disciplined tracking</div></div></section>
+
+  <section class="pv-section"><div class="pv-wrap"><div class="pv-center"><h2>Our Journey</h2><p class="pv-sub">Small, consistent decisions helped us move from financial uncertainty toward stability and homeownership.</p></div>
+    <div class="pv-timeline">
+      <div class="pv-milestone"><div class="pv-icon">▦</div><div class="pv-year">2019</div><h3>Starting from zero</h3><p>Immigrated to Canada. Bank balance at zero.</p></div>
+      <div class="pv-milestone"><div class="pv-icon">◉</div><div class="pv-year">2020</div><h3>Turning things around</h3><p>Applied a focused system and tackled our debt.</p></div>
+      <div class="pv-milestone"><div class="pv-icon">⌂</div><div class="pv-year">2021</div><h3>Our first home</h3><p>A milestone built through planning and discipline.</p></div>
+      <div class="pv-milestone"><div class="pv-icon">★</div><div class="pv-year">2024</div><h3>A new chapter</h3><p>Continued progress for our family.</p></div>
+    </div>
+  </div></section>
+
+  <section class="pv-section pv-story"><div class="pv-wrap pv-story-grid">
+    <div><span class="pv-kicker">The method behind the progress</span><h2 style="margin-top:14px">A System Built From Real Experience</h2><p>We learned that financial progress isn't about being perfect or earning a fortune. It's about understanding where your money goes, making intentional choices, and following a plan consistently.</p><p>Our approach combines practical tracking, debt awareness, savings goals and decisions made one step at a time.</p><a class="pv-btn" href="#pv-guide">DISCOVER THE GUIDE</a></div>
+    <div class="pv-story-art">“A clearer picture of our money helped us make better decisions for our future.”</div>
+  </div></section>
+
+  <section class="pv-section" id="pv-guide"><div class="pv-wrap">
+    <div class="pv-guide-grid"><div class="pv-book-small"><small>THE</small><strong>FINANCIAL<br>SECURITY<br>GUIDE</strong><span style="font-size:48px">⌂</span><small>PLAN · SAVE · INVEST</small></div>
+      <div><span class="pv-kicker">Your practical roadmap</span><h2 style="margin-top:12px">The Financial Security Guide</h2><div class="pv-price">$27.99</div><p>A step-by-step guide to help you understand your finances and build a plan you can follow.</p><a class="pv-btn" href="YOUR_GUIDE_CHECKOUT_URL">GET INSTANT ACCESS&nbsp; ›</a></div>
+    </div>
+    <div class="pv-benefits"><div class="pv-benefit"><span>⌕</span>Find hidden financial leaks</div><div class="pv-benefit"><span>⌂</span>Build a realistic savings strategy</div><div class="pv-benefit"><span>♢</span>Create a debt plan and emergency buffer</div></div>
+  </div></section>
+
+  <section class="pv-section pv-wealth" id="pv-wealthme"><div class="pv-wrap pv-wealth-grid">
+    <div><span class="pv-kicker">Put your plan into action</span><h2 style="margin-top:13px">Strategy Is Nothing Without Execution.</h2><p>Meet WealthMe, your personal finance dashboard. Bring your day-to-day money picture into one organized place.</p><ul class="pv-checks"><li>Track income and expenses</li><li>Monitor debts and investments</li><li>See your financial picture clearly</li><li>Review spending patterns over time</li></ul></div>
+    <div class="pv-dashboard"><div class="pv-dash-head"><span>◈ WealthMe</span><span>Overview</span></div><div class="pv-dash-grid"><div class="pv-dash-card"><small>TOTAL BALANCE</small><strong>$12,840</strong><div class="pv-up">▲ 8.4%</div><div class="pv-line"></div></div><div class="pv-dash-card"><small>EXPENSES</small><div class="pv-donut"></div><small style="text-align:center">Monthly breakdown</small></div><div class="pv-dash-card" style="grid-column:1/-1"><small>RECENT TRANSACTIONS</small><div class="pv-metric">Groceries <b>-$86.24</b></div><div class="pv-metric">Salary <b>+$4,300.00</b></div></div></div></div>
+    <div class="pv-bundle"><b>GUIDE + WEALTHME BUNDLE</b><div class="pv-price">$47</div><p>One practical guide, plus WealthMe access to help put your plan into action.</p><a class="pv-btn" href="YOUR_BUNDLE_CHECKOUT_URL">GET THE COMPLETE SYSTEM</a></div>
+  </div></section>
+
+  <section class="pv-section pv-pricing" id="pv-pricing"><div class="pv-wrap"><div class="pv-center"><h2>Choose Your Financial System</h2><p class="pv-sub">Start with the guide, or pair it with WealthMe to put your plan into practice.</p></div>
+    <div class="pv-plans"><div class="pv-plan"><h3>THE GUIDE</h3><div class="pv-price">$27.99</div><ul><li>Financial Security Guide (PDF)</li><li>Practical step-by-step strategy</li><li>Work through it at your own pace</li></ul><a class="pv-btn" href="YOUR_GUIDE_CHECKOUT_URL">GET THE GUIDE</a></div>
+      <div class="pv-plan pv-plan-featured"><div class="pv-ribbon">BEST VALUE</div><h3>THE COMPLETE SYSTEM</h3><div class="pv-price">$47</div><ul><li>Everything in the Financial Security Guide</li><li>WealthMe access</li><li>A practical system for tracking your finances</li></ul><a class="pv-btn" href="YOUR_BUNDLE_CHECKOUT_URL">GET THE COMPLETE SYSTEM&nbsp; ›</a></div>
+    </div>
+  </div></section>
+
+  <section class="pv-section"><div class="pv-wrap pv-about-faq">
+    <div class="pv-about"><div class="pv-avatar">PV</div><div><h3>A Practical Method, Built by Our Family</h3><p>We're Priscila and Diego Veloso. Our journey in Canada taught us the value of planning, discipline and thoughtful financial choices. We're sharing the approach that helped us move forward.</p></div></div>
+    <div class="pv-faq"><h2>Frequently Asked Questions</h2>
+      <details><summary>How do I receive the guide?</summary><p>Explain the actual delivery process, including whether the PDF is delivered by email or through a download page.</p></details>
+      <details><summary>What is included with WealthMe?</summary><p>WealthMe is a personal finance tracking tool designed to help organize income, expenses, debts and investments. Confirm the features included in your offer.</p></details>
+      <details><summary>When will I receive app access?</summary><p>State the confirmed access and onboarding timeline. Only promise immediate or lifetime access if those terms are accurate.</p></details>
+      <details><summary>What is the refund policy?</summary><p>Insert your actual refund policy and any applicable conditions before publishing.</p></details>
+    </div>
+  </div></section>
+
+  <section class="pv-final"><div class="pv-wrap"><h2>Your Next Chapter Starts With a Clearer Plan.</h2><a class="pv-btn pv-btn-gold" href="#pv-pricing">CHOOSE YOUR FINANCIAL SYSTEM&nbsp; ›</a></div></section>
+  <footer class="pv-footer"><div class="pv-wrap"><div class="pv-footer-inner"><strong>⌂ PRISCILA VELOSO</strong><span><a href="mailto:YOUR_EMAIL@example.com">Contact</a><a href="YOUR_PRIVACY_POLICY_URL">Privacy</a><a href="YOUR_REFUND_POLICY_URL">Refund Policy</a></span><em>Plan today. Live better tomorrow.</em></div><div class="pv-disclaimer">Educational content only; not individualized financial, tax, legal or investment advice. Replace sample links, delivery details, policy text and illustrative dashboard figures with verified information before publishing.</div></div></footer>
+</div>
